@@ -1,15 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Stylus from '../page/stylus/index.vue'
+import studyRouter from '@/studies/study-router';
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'Stylus',
-      component: Stylus
-    }
+    ...studyRouter
   ]
 })
