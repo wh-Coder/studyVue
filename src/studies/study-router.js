@@ -3,6 +3,7 @@
  */
 const Stylus = resolve => require(['@/studies/stylus/index'], resolve)
 const Router = resolve => require(['@/studies/router/index'], resolve)
+const Animate = resolve => require(['@/studies/animate/index'], resolve)
 
 import Red from '@/studies/router/red'
 import Green from '@/studies/router/green'
@@ -17,5 +18,6 @@ export default [
       {path: 'green',component: Green},
       {path: 'blue',component: Blue}
     ]
-  }
+  },
+  {path: '/animate', component: Animate}
 ]
