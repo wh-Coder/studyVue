@@ -5,6 +5,7 @@
     </transition>
     <div class="tabs">
       <router-link class="tab" v-for="tab in tabs" :key="tab.id" :to="tab.path">
+        <icon :name="tab.icon" :scale="2" style="color: red"></icon>
         <div class="tab-title">{{tab.title}}</div>
       </router-link>
     </div>
@@ -16,9 +17,9 @@
     data() {
       return {
         tabs: [
-          {path: '/router/red', title: '红色'},
-          {path: '/router/green', title: '绿色'},
-          {path: '/router/blue', title: '蓝色'},
+          {path: '/router/red', title: '红色',icon: 'Category'},
+          {path: '/router/green', title: '绿色',icon: 'all'},
+          {path: '/router/blue', title: '蓝色',icon:'favorite'},
         ],
         transitionName: ''
       };
