@@ -8,8 +8,13 @@ import router from './router'
 // 关闭生产环境下面的提示
 Vue.config.productionTip = false
 
+// 引入图标SVG
 import Icon from 'vue-svg-icon/Icon.vue';
 Vue.component('icon', Icon);
+
+// 引入vux插件
+import {AlertPlugin} from 'vux'
+Vue.use(AlertPlugin);
 
 /* eslint-disable no-new */
 new Vue({
